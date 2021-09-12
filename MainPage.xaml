@@ -33,8 +33,10 @@
             <TextBox Header="Enter your choice:" Name="TemperatureInput" Padding="5, 10"/>
         </StackPanel>
         <StackPanel Padding="0, 10" Height="46" Width="301">
-            <Button Name="MyButton" Click="MyButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center">Click Me</Button>
-            <TextBlock Name="ResultTextBlock" Padding="5, 5" HorizontalAlignment="Center" Width="418"/>
+            <Button Click="MyButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center">Convert!</Button>
+        </StackPanel>
+        <StackPanel Padding="0, 10" Height="46" HorizontalAlignment="Center">
+            <TextBlock Name="ResultTextBlock" Padding="0, 10" HorizontalAlignment="Center" FontSize="18"/>
         </StackPanel>
 
     </StackPanel>
