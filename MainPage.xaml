@@ -11,26 +11,26 @@
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="Temperature Converter" FontSize="32" Padding="0, 25" HorizontalAlignment="Center"/>
+        <TextBlock Text="Temperature Converter" FontSize="32" Padding="0, 25" HorizontalAlignment="Center" FontWeight="Bold"/>
         <StackPanel Padding="0, 10">
-            <TextBlock Text="Choose whether to convert from Fahrenheit, Celsius or Kelvin:" Padding="0, 10" HorizontalAlignment="Center"/>
-            <ComboBox Name="FromInput"  Padding="5, 10" PlaceholderText="Pick a temperature unit:" SelectionChanged="FromInput_SelectionChanged" Width="301" HorizontalAlignment="Center">
+            <TextBlock Text="Choose which temperature unit to convert from:" Padding="0, 10" HorizontalAlignment="Center" FontSize="18"/>
+            <ComboBox Name="FromInput"  Padding="10,10,10,10" PlaceholderText="Pick a temperature unit:" SelectionChanged="FromInput_SelectionChanged" Width="301" HorizontalAlignment="Center">
                 <ComboBoxItem Name="FromCelsius">Celsius</ComboBoxItem>
                 <ComboBoxItem Name="FromKelvin">Kelvin</ComboBoxItem>
                 <ComboBoxItem Name="FromFahrenheit">Fahrenheit</ComboBoxItem>
             </ComboBox>
         </StackPanel>
         <StackPanel Padding="0, 10">
-            <TextBlock Text="Choose whether to convert to Fahrenheit, Celsius or Kelvin:" Padding="0, 10" HorizontalAlignment="Center"/>
-            <ComboBox Name="ToInput"  Padding="5, 10" PlaceholderText="Pick a temperature unit:" Width="301" HorizontalAlignment="Center">
+            <TextBlock Text="Choose which temperature unit to convert to:" Padding="0, 10" HorizontalAlignment="Center" FontSize="18"/>
+            <ComboBox Name="ToInput"  Padding="10,10,10,10" PlaceholderText="Pick a temperature unit:" Width="301" HorizontalAlignment="Center">
                 <ComboBoxItem Name="ToCelsius">Celsius</ComboBoxItem>
                 <ComboBoxItem Name="ToKelvin">Kelvin</ComboBoxItem>
                 <ComboBoxItem Name="ToFahrenheit">Fahrenheit</ComboBoxItem>
             </ComboBox>
         </StackPanel>
         <StackPanel Padding="0, 10">
-            <TextBlock Text="Choose what temperature to convert:" Padding="0, 10" HorizontalAlignment="Center"/>
-            <TextBox Header="Enter your choice:" Name="TemperatureInput" Padding="5, 10"/>
+            <TextBlock Text="Choose what temperature to convert:" Padding="0, 10" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox FontSize="16" Name="TemperatureInput" Padding="5, 10"/>
         </StackPanel>
         <StackPanel Padding="0, 10" Height="46" Width="301">
             <Button Click="MyButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center">Convert!</Button>
@@ -38,6 +38,7 @@
         <StackPanel Padding="0, 10" Height="46" HorizontalAlignment="Center">
             <TextBlock Name="ResultTextBlock" Padding="0, 10" HorizontalAlignment="Center" FontSize="18"/>
         </StackPanel>
+
 
     </StackPanel>
 </Page>
