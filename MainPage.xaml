@@ -10,11 +10,16 @@
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
     
-    <NavigationView IsSettingsVisible="False" UseLayoutRounding="True" Background="{ThemeResource }">
-        <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Switch">Temperature Converter</NavigationViewItem>
-            <NavigationViewItem Icon="Switch">Something else converter</NavigationViewItem>
-        </NavigationView.MenuItems>
+    <muxc:NavigationView IsSettingsVisible="False" UseLayoutRounding="True" 
+                         IsBackButtonVisible="Collapsed" SelectionFollowsFocus="Enabled" >
+        <muxc:NavigationView.MenuItems>
+            <muxc:NavigationViewItem>
+                <muxc:NavigationViewItem.Icon>
+                    <SymbolIcon Symbol="People"/>
+                </muxc:NavigationViewItem.Icon> Temperature Converter</muxc:NavigationViewItem>
+            <muxc:NavigationViewItem>Something else converter</muxc:NavigationViewItem>
+        </muxc:NavigationView.MenuItems>
+
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Temperature Converter" FontSize="32" Padding="0, 25" HorizontalAlignment="Center" FontWeight="Bold"/>
             <StackPanel Padding="0, 10">
@@ -46,5 +51,5 @@
 
 
         </StackPanel>
-    </NavigationView>
+    </muxc:NavigationView>
 </Page>
